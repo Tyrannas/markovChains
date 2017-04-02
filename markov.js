@@ -49,7 +49,7 @@ class Markov {
 		else{
 			for(let j = words.length; j > 0; --j){
 				for(let c in this.chains){
-					console.log("chaine: " + c + " mots: " + words.slice(0,j).join('-'));
+					//console.log("chaine: " + c + " mots: " + words.slice(0,j).join('-'));
 					if(c.indexOf(words.slice(0,j).join('-')) === 0){
 						return c.split('-')[j+1];
 					}
